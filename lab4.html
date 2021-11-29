@@ -12,17 +12,20 @@
 				}
 			let n = parseInt(prompt(numbas))
 			if (n == 0) {
-				var numbs = numbas
 				break;
 				}
 			}
+			var mumbs = []
 			
-			for (let j = 0; j < numbs.length; j++){
-				if (numbs[j] < 0){
-					numbs[j] = numbs[j] * numbs[j]
+			for (let j = 0; j < numbas.length; j++){
+				if (numbas[j] < 0){
+					mumbs[j] = numbas[j] * numbas[j]
+				}
+				else{
+					mumbs.push(numbas[j])
 				}
 			}
-			alert(numbs)
+			alert(mumbs)
 			
 			let s1 = 0
 			let s2 = 0
@@ -38,7 +41,10 @@
 					c2++
 				}
 			}
-			alert(s2/c2)
+			alert(s1)
+			alert(s2)
+			alert(Math.floor(s2/c2))
+			alert(Math.floor(s1/c1))
 			
 		</script>
 		<script>
