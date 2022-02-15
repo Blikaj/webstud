@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Это веб-страница</title>
+  </head>
+  <body>
+
+    <h2>Какая-то страница</h2>
+
+    <p>
+      Really good webpage!
+      <div class="like_button_container" data-commentid="1"></div>
+    </p>
+
+    <p>
+      I like it!
+      <div class="like_button_container" data-commentid="2"></div>
+    </p>
+
+    <p>
+      Nice page, unfortunately 196.24.64.10
+      <div class="like_button_container" data-commentid="3"></div>
+    </p>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="like_button.js"></script>
+
+  </body>
+</html>
